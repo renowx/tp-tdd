@@ -25,14 +25,12 @@ public class TestConvert {
 	@Test
 	public void test_num2text_dizaine() {
 		Assert.assertEquals("dix", Convert.num2text("10"));
-		Assert.assertEquals("vingt", Convert.num2text("20"));
-		Assert.assertEquals("trente", Convert.num2text("30"));
-		Assert.assertEquals("quarante", Convert.num2text("40"));
-		Assert.assertEquals("cinquante", Convert.num2text("50"));
-		Assert.assertEquals("soixante", Convert.num2text("60"));
-		Assert.assertEquals("soixante-dix", Convert.num2text("70"));
-		Assert.assertEquals("quatre-vingt", Convert.num2text("80"));
-		Assert.assertEquals("quatre-vingt-dix", Convert.num2text("90"));
+		Assert.assertEquals("onze", Convert.num2text("11"));
+		Assert.assertEquals("douze", Convert.num2text("12"));
+		Assert.assertEquals("treize", Convert.num2text("13"));
+		Assert.assertEquals("quatorze", Convert.num2text("14"));
+		Assert.assertEquals("quinze", Convert.num2text("15"));
+		Assert.assertEquals("seize", Convert.num2text("16"));
 	}
 
 }
