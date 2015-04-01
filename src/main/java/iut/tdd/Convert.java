@@ -14,18 +14,25 @@ public class Convert {
 	public static String[] tab4 = new String[] { "dix", "vingt", "trente",
 			"quarante", "cinquante", "soixante" };
 
+	
+	
 	public static String num2text(String input) {
 		String pot = null;
-		if (input.length() == 1) {
+		int num = Integer.parseInt(input);
+		if (num <= 16) {
 			for (int i = 0; i < tab.length; i++) {
 				if (input == tab[i]) {
 					pot = tab2[i];
 				}
 			}
 		}
-		if (input.length() == 2){
-			
-		}
+		if (num > 16) {
+			if (input.substring(0,1).equals("1")) {
+				pot = "dix-" + tab2[num - 10];
+			} else {
+				pot = input.substring(0,1);
+			}
+		} 
 		return pot;
 	}
 
